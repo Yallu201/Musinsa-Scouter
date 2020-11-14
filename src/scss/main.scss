@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+.theme {
+  // min-height: 100vh;
+  color: #23221e;
+  // background: #f2f7f5;
+  background: #f3f3f3;
+  border-color: #23221e;
+  &.dark {
+    color: #f2f7f5;
+    background: #23221e;
+    border-color: #f2f7f5;
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "msouter_front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@sentry/browser": "^5.10.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "bulma": "^0.8.0",
+    "chart.js": "^2.9.4",
+    "classnames": "^2.2.6",
+    "cross-env": "^6.0.3",
+    "firebase": "^7.6.1",
+    "node-sass": "^4.13.0",
+    "query-string": "^6.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.0",
+    "react-virtualized": "^9.22.2",
+    "redux": "^4.0.5",
+    "redux-actions": "^2.6.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_PATH=src react-scripts start",
+    "build": "cross-env NODE_PATH=src react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^4.0.0",
+    "redux-devtools-extension": "^2.13.8"
+  }
+}
