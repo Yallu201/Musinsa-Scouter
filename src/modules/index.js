@@ -3,5 +3,6 @@ import ranking from './ranking';
 import theme from './theme';
 import loading from './loading';
 import product from './product';
-const rootReducer = combineReducers({ ranking, product, theme, loading });
+import brands from './brands';
+const rootReducer = combineReducers({ ranking, product, brands, theme, loading });
 export default rootReducer;

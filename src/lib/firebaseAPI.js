@@ -11,12 +11,26 @@ export const getRanking = date => {
     });
   });
 };
+
 export const getProduct = serialNo => {
   return new Promise((resolve, reject) => {
     Firebase.product(serialNo).on('value', snapshot => {
       try {
         const product = snapshot.val();
         resolve({ data: product });
+      } catch (e) {
+        reject(e);
+      }
+    });
+  });
+};
+
+export const getBrands = input => {
+  return new Promise((resolve, reject) => {
+    Firebase.brands().on('value', snapshot => {
+      try {
+        const brands = snapshot.val();
+        resolve({ data: brands });
       } catch (e) {
         reject(e);
       }

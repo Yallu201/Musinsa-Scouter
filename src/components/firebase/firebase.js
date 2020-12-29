@@ -11,6 +11,7 @@ class Firebase {
   }
   ranking = date => this.db.ref(`ranking/${date}`);
   product = serialNo => this.db.ref(`products/${serialNo}`);
+  brands = () => this.db.ref('brands/');
 }
 
 const fb = new Firebase();
